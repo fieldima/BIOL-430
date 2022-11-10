@@ -1,0 +1,206 @@
+name_1006,upregulated,n
+defense response to virus,TRUE,4
+activation of innate immune response,TRUE,2
+cell differentiation,FALSE,2
+cellular response to interferon-beta,TRUE,2
+defense response,FALSE,2
+G protein-coupled receptor signaling pathway,FALSE,2
+immune system process,TRUE,2
+innate immune response,TRUE,2
+negative regulation of viral genome replication,TRUE,2
+response to bacterium,TRUE,2
+signal transduction,FALSE,2
+spermatogenesis,TRUE,2
+acetylcholine receptor signaling pathway,TRUE,1
+activated T cell proliferation,FALSE,1
+activation of cysteine-type endopeptidase activity,TRUE,1
+acute-phase response,FALSE,1
+adhesion of symbiont to host,TRUE,1
+adult locomotory behavior,FALSE,1
+antibacterial humoral response,FALSE,1
+antigen processing and presentation of endogenous peptide antigen via MHC class I,TRUE,1
+antimicrobial humoral immune response mediated by antimicrobial peptide,FALSE,1
+apoptotic process,TRUE,1
+axon extension,FALSE,1
+axon guidance,FALSE,1
+B cell differentiation,FALSE,1
+cardiac muscle hypertrophy in response to stress,FALSE,1
+cell differentiation,TRUE,1
+cell population proliferation,FALSE,1
+cellular lipid metabolic process,FALSE,1
+cellular response to epidermal growth factor stimulus,FALSE,1
+cellular response to glucose starvation,TRUE,1
+cellular response to growth factor stimulus,FALSE,1
+cellular response to hormone stimulus,FALSE,1
+cellular response to interferon-gamma,TRUE,1
+cellular response to ionizing radiation,TRUE,1
+cellular response to lipopolysaccharide,FALSE,1
+cellular response to lipopolysaccharide,TRUE,1
+clathrin-dependent endocytosis,FALSE,1
+CTP metabolic process,FALSE,1
+cytokine-mediated signaling pathway,FALSE,1
+defense response,TRUE,1
+defense response to bacterium,FALSE,1
+defense response to fungus,TRUE,1
+defense response to Gram-negative bacterium,FALSE,1
+defense response to Gram-positive bacterium,FALSE,1
+defense response to Gram-positive bacterium,TRUE,1
+defense response to protozoan,TRUE,1
+detection of chemical stimulus involved in sensory perception of smell,FALSE,1
+detection of light stimulus involved in visual perception,FALSE,1
+development of secondary female sexual characteristics,FALSE,1
+development of secondary male sexual characteristics,FALSE,1
+diacylglycerol biosynthetic process,FALSE,1
+dTDP biosynthetic process,TRUE,1
+dTTP biosynthetic process,TRUE,1
+dUDP biosynthetic process,TRUE,1
+erythrocyte differentiation,FALSE,1
+female pregnancy,FALSE,1
+flagellated sperm motility,TRUE,1
+gamma-delta T cell differentiation,FALSE,1
+GDP catabolic process,FALSE,1
+germ cell development,FALSE,1
+germ cell development,TRUE,1
+glycerol metabolic process,FALSE,1
+growth hormone receptor signaling pathway via JAK-STAT,FALSE,1
+immune response,TRUE,1
+innate immune response in mucosa,FALSE,1
+intrinsic apoptotic signaling pathway by p53 class mediator,TRUE,1
+lactation,FALSE,1
+lens fiber cell differentiation,TRUE,1
+lens morphogenesis in camera-type eye,TRUE,1
+lipid metabolic process,FALSE,1
+lipid storage,FALSE,1
+liver development,FALSE,1
+luteinization,FALSE,1
+lymphocyte differentiation,FALSE,1
+mast cell migration,FALSE,1
+maternal-to-zygotic transition of gene expression,FALSE,1
+membrane disruption in another organism,FALSE,1
+MHC class Ib protein complex assembly,TRUE,1
+mitotic cell cycle,FALSE,1
+monocyte differentiation,TRUE,1
+myeloid cell apoptotic process,FALSE,1
+natural killer cell differentiation,FALSE,1
+natural killer cell mediated cytotoxicity,FALSE,1
+natural killer cell proliferation,FALSE,1
+negative chemotaxis,FALSE,1
+negative regulation of axon extension involved in axon guidance,FALSE,1
+negative regulation of axon regeneration,FALSE,1
+negative regulation of cell population proliferation,FALSE,1
+negative regulation of cysteine-type endopeptidase activity,TRUE,1
+negative regulation of DNA binding,TRUE,1
+negative regulation of erythrocyte differentiation,FALSE,1
+negative regulation of innate immune response,TRUE,1
+negative regulation of mitotic cell cycle,FALSE,1
+negative regulation of myeloid cell apoptotic process,FALSE,1
+negative regulation of peptidyl-serine phosphorylation,FALSE,1
+negative regulation of signal transduction,FALSE,1
+negative regulation of signaling receptor activity,TRUE,1
+negative regulation of transcription by RNA polymerase II,TRUE,1
+"negative regulation of transcription, DNA-templated",TRUE,1
+negative regulation of translational frameshifting,TRUE,1
+negative regulation of tyrosine phosphorylation of STAT protein,FALSE,1
+nervous system development,FALSE,1
+neural crest cell migration,FALSE,1
+neuron projection extension,FALSE,1
+neuron projection guidance,FALSE,1
+nucleic acid phosphodiester bond hydrolysis,TRUE,1
+nucleobase-containing small molecule catabolic process,FALSE,1
+nucleoside diphosphate phosphorylation,TRUE,1
+nucleoside monophosphate phosphorylation,TRUE,1
+nucleoside triphosphate biosynthetic process,TRUE,1
+P granule organization,TRUE,1
+peptide antigen assembly with MHC class I protein complex,TRUE,1
+Peyer's patch development,FALSE,1
+phosphatidylinositol catabolic process,FALSE,1
+phosphatidylinositol dephosphorylation,FALSE,1
+phosphatidylinositol-mediated signaling,FALSE,1
+phosphorylation,TRUE,1
+piRNA metabolic process,TRUE,1
+positive regulation of activated T cell proliferation,FALSE,1
+positive regulation of apoptotic process,TRUE,1
+positive regulation of B cell differentiation,FALSE,1
+positive regulation of canonical Wnt signaling pathway,TRUE,1
+positive regulation of cell migration,FALSE,1
+positive regulation of cell population proliferation,FALSE,1
+positive regulation of cyclin-dependent protein serine/threonine kinase activity,TRUE,1
+positive regulation of erythrocyte differentiation,FALSE,1
+positive regulation of fibroblast growth factor production,FALSE,1
+positive regulation of gamma-delta T cell differentiation,FALSE,1
+positive regulation of gene expression,FALSE,1
+positive regulation of GTPase activity,FALSE,1
+positive regulation of inflammatory response,FALSE,1
+positive regulation of inflammatory response,TRUE,1
+positive regulation of interleukin-1 beta production,TRUE,1
+positive regulation of interleukin-2 production,FALSE,1
+positive regulation of lymphocyte differentiation,FALSE,1
+positive regulation of mitotic cell cycle,FALSE,1
+positive regulation of multicellular organism growth,FALSE,1
+positive regulation of natural killer cell differentiation,FALSE,1
+positive regulation of natural killer cell mediated cytotoxicity,FALSE,1
+positive regulation of natural killer cell proliferation,FALSE,1
+positive regulation of necroptotic process,TRUE,1
+positive regulation of receptor recycling,FALSE,1
+positive regulation of smooth muscle cell migration,FALSE,1
+positive regulation of smooth muscle cell proliferation,FALSE,1
+positive regulation of transcription by RNA polymerase II,FALSE,1
+positive regulation of transcription by RNA polymerase II,TRUE,1
+positive regulation of type I interferon-mediated signaling pathway,TRUE,1
+"positive regulation of Wnt signaling pathway, planar cell polarity pathway",TRUE,1
+post-transcriptional regulation of gene expression,TRUE,1
+progesterone metabolic process,FALSE,1
+programmed cell death,TRUE,1
+protein-containing complex assembly,TRUE,1
+proteolysis,FALSE,1
+pyrimidine nucleotide biosynthetic process,TRUE,1
+pyroptosis,TRUE,1
+receptor signaling pathway via JAK-STAT,FALSE,1
+regulation of canonical Wnt signaling pathway,TRUE,1
+regulation of cell adhesion,FALSE,1
+regulation of cell motility,FALSE,1
+regulation of cell population proliferation,FALSE,1
+regulation of cyclin-dependent protein serine/threonine kinase activity,TRUE,1
+regulation of endocytic recycling,FALSE,1
+regulation of epithelial cell differentiation,FALSE,1
+regulation of gene expression,TRUE,1
+"regulation of gene expression, epigenetic",TRUE,1
+regulation of inflammatory response,TRUE,1
+regulation of interleukin-1-mediated signaling pathway,TRUE,1
+regulation of multicellular organism growth,FALSE,1
+regulation of protein complex stability,TRUE,1
+regulation of protein kinase activity,TRUE,1
+regulation of protein kinase B signaling,FALSE,1
+regulation of protein phosphorylation,TRUE,1
+regulation of steroid metabolic process,FALSE,1
+regulation of transcription by RNA polymerase II,FALSE,1
+regulation of transcription by RNA polymerase II,TRUE,1
+"regulation of transcription, DNA-templated",FALSE,1
+"regulation of transcription, DNA-templated",TRUE,1
+regulation of translational termination,TRUE,1
+response to estradiol,FALSE,1
+response to interferon-beta,TRUE,1
+response to interferon-gamma,TRUE,1
+response to interleukin-15,FALSE,1
+response to interleukin-2,FALSE,1
+response to interleukin-4,FALSE,1
+response to lipopolysaccharide,FALSE,1
+response to peptide hormone,FALSE,1
+response to stimulus,FALSE,1
+response to stimulus,TRUE,1
+response to type I interferon,TRUE,1
+response to type III interferon,TRUE,1
+"RNA phosphodiester bond hydrolysis, endonucleolytic",TRUE,1
+rRNA catabolic process,TRUE,1
+semaphorin-plexin signaling pathway,FALSE,1
+sensory perception of smell,FALSE,1
+sex differentiation,FALSE,1
+spermatogenesis,FALSE,1
+T cell differentiation in thymus,FALSE,1
+T cell homeostasis,FALSE,1
+taurine metabolic process,FALSE,1
+transcription by RNA polymerase II,FALSE,1
+triglyceride biosynthetic process,FALSE,1
+tRNA catabolic process,TRUE,1
+UDP catabolic process,FALSE,1
+viral translational frameshifting,TRUE,1

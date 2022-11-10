@@ -1,0 +1,232 @@
+name_1006,upregulated,n
+signal transduction,TRUE,8
+immune system process,TRUE,6
+positive regulation of transcription by RNA polymerase II,TRUE,5
+regulation of transcription by RNA polymerase II,TRUE,5
+defense response to Gram-positive bacterium,TRUE,4
+defense response to protozoan,TRUE,4
+defense response to virus,TRUE,4
+"regulation of transcription, DNA-templated",TRUE,4
+response to bacterium,TRUE,4
+response to virus,TRUE,4
+apoptotic process,TRUE,3
+cellular response to interferon-gamma,TRUE,3
+G protein-coupled receptor signaling pathway,TRUE,3
+immune response,TRUE,3
+negative regulation of transcription by RNA polymerase II,TRUE,3
+"negative regulation of transcription, DNA-templated",TRUE,3
+adhesion of symbiont to host,TRUE,2
+antigen processing and presentation,TRUE,2
+antigen processing and presentation of endogenous peptide antigen via MHC class Ib,TRUE,2
+antigen processing and presentation of peptide antigen via MHC class I,TRUE,2
+cellular response to lipopolysaccharide,TRUE,2
+defense response,TRUE,2
+defense response to bacterium,TRUE,2
+endoplasmic reticulum unfolded protein response,TRUE,2
+gluconeogenesis,TRUE,2
+inner ear development,TRUE,2
+microglial cell activation,TRUE,2
+negative regulation of gene expression,TRUE,2
+negative regulation of viral genome replication,TRUE,2
+positive regulation of apoptotic process,TRUE,2
+positive regulation of cell population proliferation,TRUE,2
+positive regulation of cytokine production,TRUE,2
+positive regulation of gene expression,TRUE,2
+positive regulation of nitric-oxide synthase biosynthetic process,TRUE,2
+positive regulation of T cell mediated cytotoxicity,TRUE,2
+"positive regulation of transcription, DNA-templated",TRUE,2
+response to pheromone,TRUE,2
+sensory perception of chemical stimulus,TRUE,2
+T cell mediated cytotoxicity,TRUE,2
+activation of cysteine-type endopeptidase activity involved in apoptotic process,TRUE,1
+adaptive immune response,TRUE,1
+adenosine catabolic process,TRUE,1
+allantoin metabolic process,TRUE,1
+AMP catabolic process,TRUE,1
+"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-dependent",TRUE,1
+"antigen processing and presentation of endogenous peptide antigen via MHC class Ib via ER pathway, TAP-dependent",TRUE,1
+antigen processing and presentation of exogenous peptide antigen via MHC class I,TRUE,1
+astrocyte activation,TRUE,1
+bone development,TRUE,1
+"CD8-positive, alpha-beta T cell differentiation involved in immune response",TRUE,1
+cell chemotaxis,TRUE,1
+cell differentiation,TRUE,1
+cellular response to amino acid starvation,TRUE,1
+cellular response to interferon-alpha,TRUE,1
+cellular response to interferon-beta,TRUE,1
+cellular response to interleukin-18,TRUE,1
+chemotaxis,TRUE,1
+cholesterol homeostasis,TRUE,1
+circadian regulation of gene expression,TRUE,1
+circadian rhythm,TRUE,1
+cytoskeleton organization,TRUE,1
+dAMP catabolic process,TRUE,1
+deoxyadenosine catabolic process,TRUE,1
+deoxyguanosine catabolic process,TRUE,1
+deoxyinosine catabolic process,TRUE,1
+detection of chemical stimulus involved in sensory perception of smell,TRUE,1
+dGMP catabolic process,TRUE,1
+"DNA catabolic process, exonucleolytic",TRUE,1
+embryonic pattern specification,TRUE,1
+extrinsic apoptotic signaling pathway,TRUE,1
+female pregnancy,TRUE,1
+glucose 6-phosphate metabolic process,TRUE,1
+glucose homeostasis,TRUE,1
+glucose-6-phosphate transport,TRUE,1
+glycerol transmembrane transport,TRUE,1
+glycogen catabolic process,TRUE,1
+glycogen metabolic process,TRUE,1
+GMP catabolic process,TRUE,1
+guanine catabolic process,TRUE,1
+heterochromatin assembly,TRUE,1
+histone H2A-K119 monoubiquitination,TRUE,1
+humoral immune response,TRUE,1
+hypoxanthine catabolic process,TRUE,1
+IMP catabolic process,TRUE,1
+inactivation of X chromosome by genomic imprinting,TRUE,1
+inflammatory cell apoptotic process,TRUE,1
+innate immune response,TRUE,1
+inosine catabolic process,TRUE,1
+interferon-gamma-mediated signaling pathway,TRUE,1
+intrinsic apoptotic signaling pathway by p53 class mediator,TRUE,1
+intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator,TRUE,1
+iron-sulfur cluster assembly,TRUE,1
+lactation,TRUE,1
+lipid homeostasis,TRUE,1
+lung development,TRUE,1
+macrophage activation involved in immune response,TRUE,1
+macrophage differentiation,TRUE,1
+multicellular organism growth,TRUE,1
+"NAD biosynthetic process",TRUE,1
+negative regulation of amyloid-beta clearance,TRUE,1
+negative regulation of autophagy,TRUE,1
+negative regulation of cell population proliferation,TRUE,1
+negative regulation of cellular senescence,TRUE,1
+negative regulation of cytokine production,TRUE,1
+negative regulation of endothelial cell differentiation,TRUE,1
+negative regulation of endothelial cell proliferation,TRUE,1
+negative regulation of epithelial cell differentiation,TRUE,1
+negative regulation of ERK1 and ERK2 cascade,TRUE,1
+negative regulation of fibroblast proliferation,TRUE,1
+negative regulation of glomerular mesangial cell proliferation,TRUE,1
+negative regulation of interleukin-17 production,TRUE,1
+negative regulation of myelination,TRUE,1
+negative regulation of neuron projection development,TRUE,1
+negative regulation of osteoclast differentiation,TRUE,1
+negative regulation of protein binding,TRUE,1
+negative regulation of protein kinase B signaling,TRUE,1
+negative regulation of protein phosphorylation,TRUE,1
+negative regulation of protein-containing complex assembly,TRUE,1
+negative regulation of receptor signaling pathway via JAK-STAT,TRUE,1
+negative regulation of smooth muscle cell proliferation,TRUE,1
+negative regulation of tau-protein kinase activity,TRUE,1
+negative regulation of type I interferon production,TRUE,1
+negative regulation of type III interferon production,TRUE,1
+negative regulation of vascular endothelial growth factor signaling pathway,TRUE,1
+negative regulation of vasculogenesis,TRUE,1
+nervous system development,TRUE,1
+neuroinflammatory response,TRUE,1
+neutrophil apoptotic process,TRUE,1
+neutrophil chemotaxis,TRUE,1
+nitric oxide biosynthetic process,TRUE,1
+Notch signaling pathway,TRUE,1
+nuclear envelope organization,TRUE,1
+nuclear migration,TRUE,1
+nuclear pore localization,TRUE,1
+nucleic acid phosphodiester bond hydrolysis,TRUE,1
+phosphate-containing compound metabolic process,TRUE,1
+phosphorylated carbohydrate dephosphorylation,TRUE,1
+positive regulation by host of viral process,TRUE,1
+positive regulation of amyloid-beta formation,TRUE,1
+positive regulation of autophagy,TRUE,1
+positive regulation of calcidiol 1-monooxygenase activity,TRUE,1
+"positive regulation of CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation involved in immune response",TRUE,1
+positive regulation of cell adhesion,TRUE,1
+positive regulation of cellular respiration,TRUE,1
+positive regulation of chemokine production,TRUE,1
+positive regulation of core promoter binding,TRUE,1
+positive regulation of epithelial cell migration,TRUE,1
+"positive regulation of fructose 1,6-bisphosphate 1-phosphatase activity",TRUE,1
+"positive regulation of fructose 1,6-bisphosphate metabolic process",TRUE,1
+positive regulation of glycolytic process,TRUE,1
+positive regulation of inflammatory response,TRUE,1
+positive regulation of interleukin-1 beta production,TRUE,1
+positive regulation of interleukin-12 production,TRUE,1
+positive regulation of interleukin-23 production,TRUE,1
+positive regulation of interleukin-6 production,TRUE,1
+positive regulation of iron ion import across plasma membrane,TRUE,1
+positive regulation of isotype switching to IgG isotypes,TRUE,1
+positive regulation of killing of cells of another organism,TRUE,1
+positive regulation of macrophage cytokine production,TRUE,1
+positive regulation of membrane protein ectodomain proteolysis,TRUE,1
+positive regulation of MHC class II biosynthetic process,TRUE,1
+positive regulation of mRNA catabolic process,TRUE,1
+positive regulation of neurogenesis,TRUE,1
+positive regulation of neuron death,TRUE,1
+positive regulation of neuron differentiation,TRUE,1
+positive regulation of nitric oxide biosynthetic process,TRUE,1
+positive regulation of nitrogen compound metabolic process,TRUE,1
+positive regulation of NMDA glutamate receptor activity,TRUE,1
+positive regulation of osteoclast differentiation,TRUE,1
+positive regulation of p38MAPK cascade,TRUE,1
+positive regulation of peptidyl-serine phosphorylation of STAT protein,TRUE,1
+positive regulation of phagocytosis,TRUE,1
+positive regulation of protein deacetylation,TRUE,1
+positive regulation of protein import into nucleus,TRUE,1
+positive regulation of protein phosphorylation,TRUE,1
+positive regulation of protein serine/threonine kinase activity,TRUE,1
+positive regulation of protein-containing complex assembly,TRUE,1
+positive regulation of reactive oxygen species metabolic process,TRUE,1
+positive regulation of signaling receptor activity,TRUE,1
+positive regulation of smooth muscle cell apoptotic process,TRUE,1
+positive regulation of smooth muscle cell proliferation,TRUE,1
+"positive regulation of synaptic transmission, cholinergic",TRUE,1
+positive regulation of T cell proliferation,TRUE,1
+positive regulation of TRAIL-activated apoptotic signaling pathway,TRUE,1
+positive regulation of transcription from RNA polymerase II promoter in response to endoplasmic reticulum stress,TRUE,1
+positive regulation of tumor necrosis factor (ligand) superfamily member 11 production,TRUE,1
+positive regulation of tumor necrosis factor production,TRUE,1
+positive regulation of tyrosine phosphorylation of STAT protein,TRUE,1
+positive regulation of viral genome replication,TRUE,1
+positive regulation of vitamin D biosynthetic process,TRUE,1
+protein localization to nuclear envelope,TRUE,1
+protein ubiquitination,TRUE,1
+pyridine nucleotide biosynthetic process,TRUE,1
+receptor signaling pathway via JAK-STAT,TRUE,1
+regulation of defense response to virus by host,TRUE,1
+regulation of epithelial cell differentiation,TRUE,1
+regulation of gene expression,TRUE,1
+regulation of glial cell proliferation,TRUE,1
+regulation of hepatocyte proliferation,TRUE,1
+regulation of I-kappaB kinase/NF-kappaB signaling,TRUE,1
+regulation of immune response,TRUE,1
+regulation of immune system process,TRUE,1
+regulation of insulin secretion,TRUE,1
+regulation of lung blood pressure,TRUE,1
+regulation of neuronal action potential,TRUE,1
+regulation of protein ADP-ribosylation,TRUE,1
+regulation of the force of heart contraction,TRUE,1
+renal water absorption,TRUE,1
+response to aluminum ion,TRUE,1
+response to interferon-beta,TRUE,1
+response to stimulus,TRUE,1
+response to xenobiotic stimulus,TRUE,1
+rhythmic process,TRUE,1
+RNA catabolic process,TRUE,1
+"RNA phosphodiester bond hydrolysis, exonucleolytic",TRUE,1
+rRNA processing,TRUE,1
+sensory perception of mechanical stimulus,TRUE,1
+sensory perception of smell,TRUE,1
+skeletal muscle cell differentiation,TRUE,1
+spermatogenesis,TRUE,1
+steroid metabolic process,TRUE,1
+T cell proliferation,TRUE,1
+T cell receptor signaling pathway,TRUE,1
+transmembrane transport,TRUE,1
+triglyceride metabolic process,TRUE,1
+ubiquitin-dependent endocytosis,TRUE,1
+urate metabolic process,TRUE,1
+urea transmembrane transport,TRUE,1
+urea transport,TRUE,1
+water transport,TRUE,1
+xanthine catabolic process,TRUE,1

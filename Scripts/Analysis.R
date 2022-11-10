@@ -106,13 +106,16 @@ GSE_E218A <- list(list(GSE78888E218A$GSE78888_series_matrix.txt.gz, E218ADat, E2
 
 runLimma <- function(obj, strain){
   Fit <- lmFit(obj[[2]], model.matrix( ~ virus, data = obj[[3]])) %>% eBayes()
-  try(Top1000 <- topTable(Fit, coef = strain, sort.by = "p", confint = TRUE, n = 1000) %>%
+  try(Top1000 <- topTable(Fit, coef = strain, sort.by = "p", p.value = 0.01, lfc = 1, confint = TRUE, n = 1000) %>%
     rownames_to_column("ID") %>% inner_join(obj[[1]]@featureData@data) %>% dplyr::select(ENSEMBL_ID, logFC, adj.P.Val, CI.L, CI.R) %>%
     dplyr::rename(Symbol = ENSEMBL_ID, Log2FC = logFC, pvalue = adj.P.Val))
 }
 
 WNVWT_list <- map(WNVWT_split, ~ runLimma(.x, strain = "virusWNVWT"))
 WNVE218A_list <- map(WNVE218A_split, ~ runLimma(.x, strain = "virusWNVE218A"))
+
+#No DEGs for GSE77192 for WNVE218A
+WNVE218A_list <- WNVE218A_list[c(1,2,4)]
 
 # Limma with GSE78888
 
@@ -121,8 +124,25 @@ GSEE218A_list <- GSE_E218A %>% map(~ runLimma(.x, strain = "virusWNVE218A"))
 
 rm(GSE78888, GSE78888_fixed, dataList)
 
+GSEs <- c("GSE78888", "GSE77193", "GSE68380", "GSE77192", "GSE67473")
+
 WT_res <- append(GSEWT_list, WNVWT_list)
+names(WT_res) <- GSEs
+
 E218A_res <- append(GSEE218A_list, WNVE218A_list)
+names(E218A_res) <- GSEs[c(1,2,3,5)]
+
+WT_symbols <- map(WT_res, function(x) x$Symbol) %>% map(~ str_subset(., pattern = ".+"))
+E218A_symbols <- map(E218A_res, function(x) x$Symbol) %>% map(~ str_subset(., pattern = ".+"))
+
+#Find DEGs common to all experiments
+common_WT <- intersect(WT_symbols[[1]], WT_symbols[[2]]) %>% intersect(WT_symbols[[3]]) %>% intersect(WT_symbols[[4]]) %>% intersect(WT_symbols[[5]])
+common_E218A <- intersect(E218A_symbols[[1]], E218A_symbols[[2]]) %>% intersect(E218A_symbols[[3]]) %>% intersect(E218A_symbols[[4]])
+
+WTvenn <- WT_symbols  %>% ggvenn() + ggtitle("Wild Type")
+E218Avenn <- E218A_symbols %>% ggvenn() + ggtitle("E218A") 
+
+WTvenn + E218Avenn
 
 ## Finding DEGs consistent across studies using p-value combining via Fisher's method. 
 
@@ -137,7 +157,6 @@ Comb_WT <- combining_mv(diffexp=WT_res,
              jobname="MetaVolcano",
              outputfolder=".",
              draw='HTML')
-
 
 
 Comb_E218A <- combining_mv(diffexp=E218A_res,
@@ -161,6 +180,10 @@ Comb_vol_E218A <- Comb_E218A@metaresult
 EnhancedVolcano(Comb_vol_E218A, lab = Comb_vol_E218A$Symbol, x = "metafc", y = "metap", pCutoff = 0.01, FCcutoff = 1, title = "E218A", subtitle = NULL) +
   EnhancedVolcano(Comb_vol_WT, lab = Comb_vol_WT$Symbol, x = "metafc", y = "metap", pCutoff = 0.01, FCcutoff = 1, title = "Wild Type", subtitle = NULL) 
 
+#Filter for cutoffs
+filtered_WT <- Comb_vol_WT %>% filter(abs(metafc) >= 1) %>% filter(metap <= 0.01)
+filtered_E218A <- Comb_vol_E218A %>% filter(abs(metafc) >= 1) %>% filter(metap <= 0.01)
+
 #Venn diagram
 list(WT = Comb_WT@metaresult %>% pull(Symbol), E218A = Comb_E218A@metaresult %>% pull(Symbol)) %>%
   ggvenn()
@@ -172,8 +195,12 @@ GO_terms <- getBM(attributes = c("ensembl_transcript_id", "go_id", "name_1006", 
       values = c(Comb_vol_WT$Symbol, Comb_vol_E218A$Symbol),
       mart = ensembl) %>% rename(Symbol = ensembl_transcript_id) %>% dplyr::filter(namespace_1003 == "biological_process", name_1006 != "biological_process")
 
+#Common DEGs before meta-analysis
+WT_premeta_GO <- common_WT %>% data.frame(Symbol = .) %>% left_join(GO_terms)
+E218A_premeta_GO <- common_E218A %>% data.frame(Symbol = .) %>% left_join(GO_terms)
+
 #DEGs shared between two
-shared_DEGs <- inner_join(Comb_vol_WT, Comb_vol_E218A, by = "Symbol")
+shared_DEGs <- inner_join(filtered_WT, filtered_E218A, by = "Symbol")
 shared_GO <- shared_DEGs %>% left_join(GO_terms) %>%
   mutate(upregulated = metafc.x > 0) %>%
   dplyr::select(Symbol, go_id, name_1006, upregulated) %>%
@@ -183,7 +210,7 @@ shared_GO <- shared_DEGs %>% left_join(GO_terms) %>%
   arrange(desc(n))
 
 #DEGs unique to WT
-WT_DEGs <- anti_join(Comb_vol_WT, Comb_vol_E218A, by = "Symbol")
+WT_DEGs <- anti_join(filtered_WT, filtered_E218A, by = "Symbol")
 WT_GO <- WT_DEGs %>% left_join(GO_terms) %>%
   mutate(upregulated = metafc > 0) %>%
   dplyr::select(Symbol, go_id, name_1006, upregulated) %>%
@@ -193,7 +220,7 @@ WT_GO <- WT_DEGs %>% left_join(GO_terms) %>%
   arrange(desc(n))
 
 #DEGs unique to E218A
-E218A_DEGs <- anti_join(Comb_vol_E218A, Comb_vol_WT, by = "Symbol")
+E218A_DEGs <- anti_join(filtered_E218A, filtered_WT, by = "Symbol")
 E218A_GO <- E218A_DEGs %>% left_join(GO_terms) %>%
   mutate(upregulated = metafc > 0) %>%
   dplyr::select(Symbol, go_id, name_1006, upregulated) %>%
@@ -201,3 +228,8 @@ E218A_GO <- E218A_DEGs %>% left_join(GO_terms) %>%
   summarise(n = n()) %>%
   drop_na() %>%
   arrange(desc(n))
+
+#Turn tables into CSVs
+write_csv(shared_GO, "Outputs/Shared_GO_Terms.csv")
+write_csv(WT_GO, "Outputs/WT_GO_Terms.csv")
+write_csv(E218A_GO, "Outputs/E218A_GO_Terms.csv")
