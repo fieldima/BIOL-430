@@ -62,6 +62,14 @@ all_cors %>% pheatmap(cluster_rows = FALSE, cluster_cols = FALSE, annotation_col
 #GSM1670634-36 and GSM1670645-47 are outliers, need to remove them
 fixedList[[2]] <- fixedList[[2]][,!fixedList[[2]]$geo_accession %in% c("GSEM1670634", "GSEM1670635", "GSEM1670636", "GSEM1670645", "GSEM1670646", "GSEM1670647")]
 
+## PCA
+pca <- prcomp(t(all_data), scale. = TRUE)
+summary(pca)
+PCs <- pca$x[,1:2] %>% data.frame() %>% bind_cols(heatmap_meta) 
+PCs %>% filter(PC1 < 357) %>% #Filtering out outliers found above
+  ggplot(aes(x = PC1, y = PC2, color = Tissue, shape = Treatment)) + geom_point() + theme_bw() +
+  xlab("PC1 (33.5% of variance)") + ylab("PC2 (21.2% of variance)")
+
 #split WNVWT from WNVE218A
 
 pickVirus <- function(GSE, genotype){
