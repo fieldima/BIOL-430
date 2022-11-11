@@ -70,8 +70,19 @@ PCs %>% filter(PC1 < 357) %>% #Filtering out outliers found above
   ggplot(aes(x = PC1, y = PC2, color = Tissue, shape = Treatment)) + geom_point() + theme_bw() +
   xlab("PC1 (33.5% of variance)") + ylab("PC2 (21.2% of variance)")
 
-#split WNVWT from WNVE218A
+#Loading scores
+probeNames <- fixedList[[1]]@assayData$exprs %>% na.omit() %>% rownames()
+scoresPC1 <- pca$rotation[,1] %>% abs() 
+names(scoresPC1) <- probeNames[!probeNames %in% c("A_66_P140886", "A_66_P140949", "A_66_P140954", "A_66_P140973", "A_66_P140974", "A_66_P140976")] # Removing probes with NA values from above
+sorted_scores_PC1 <- sort(scoresPC1, decreasing = TRUE) %>% as.data.frame() %>% rownames_to_column(var = "SPOT_ID") %>% rename(Scores = ".") %>%
+  left_join(fixedList[[1]]@featureData@data) %>% dplyr::select(GENE_NAME, Scores) %>% slice_head(n = 20)
 
+scoresPC2 <- pca$rotation[,2] %>% abs() 
+names(scoresPC2) <- probeNames[!probeNames %in% c("A_66_P140886", "A_66_P140949", "A_66_P140954", "A_66_P140973", "A_66_P140974", "A_66_P140976")] # Removing probes with NA values from above
+sorted_scores_PC2 <- sort(scoresPC2, decreasing = TRUE) %>% as.data.frame() %>% rownames_to_column(var = "SPOT_ID") %>% rename(Scores = ".") %>%
+  left_join(fixedList[[1]]@featureData@data) %>% dplyr::select(GENE_NAME, Scores) %>% slice_head(n = 20)
+
+#split WNVWT from WNVE218A
 pickVirus <- function(GSE, genotype){
   res <- GSE[,GSE$"virus:ch1" %in% c(genotype, "mockulum", "Mock")]
 }
