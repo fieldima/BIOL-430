@@ -1,5 +1,6 @@
 # README
 
+## Background
 In this project, I will be performing a differential expression meta-analysis on Mice infected by WNV.
 Specifically, I will be looking for genes that are uniquely expressed upon infection by infective WNV
 but are common across different neuronal tissue types.
@@ -18,3 +19,20 @@ lymph node.
 
 By performing a meta-analysis I hope to identify genes with strong evidence differential expression upon
 WNV infection brain-wide. 
+
+## Directory Structure
+
+├── BIOL-430.Rproj
+├── Figures
+│   ├── Heatmap.png # Heatmap of sample-sample correlations
+│   ├── PCA.png # Principal Component Analysis of samples
+│   ├── VennDiagram.png # Overlap of DEGs between tissue types
+│   └── VolcanoPlot.png # Volcano plots of WT and #E218A DEGs
+├── Outputs
+│   ├── E218A_GO_Terms.csv # Gene Ontology terms for just E218A strain WNV
+│   ├── Shared_GO_Terms.csv # Gene Ontology terms shared between strains
+│   └── WT_GO_Terms.csv # Gene Ontology terms for just WT WNV
+├── README.md
+└── Scripts
+    ├── Analysis.R # Script containing all analyses
+    └── Install_Packages.R # Script to install dependencies

@@ -34,10 +34,11 @@ fixedList[[2]] <- fixedList[[2]][,fixedList[[2]]$`time:ch1` == "24"]
 fixedList[[4]] <- fixedList[[4]][,fixedList[[4]]$`time:ch1` == "24"]
 
 
-## for GSE78888
+## Process needs to be done separately for GSE78888
+## GSE78888 was annotated differently between experiments
 GSE78888_fixed <- GSE78888 %>% map(only1d)
 
-#Correlation Plot
+#Generate the heatmap
 
 ## First get all data into one data frame
 all_data <- map_df(fixedList, function(x)x@assayData$exprs) %>% bind_cols(map_df(GSE78888_fixed, function(x)x@assayData$exprs)) %>% na.omit()
@@ -111,6 +112,7 @@ splitEset <- function(eset){
 WNVWT_split <- map(WNVWT, splitEset)
 WNVE218A_split <- map(WNVE218A, splitEset)
 
+# Do the same for GSE78888
 WTDat <- assayData(GSE78888WT$GSE78888_series_matrix.txt.gz)$exprs
 WTMeta <- pData(GSE78888WT$GSE78888_series_matrix.txt.gz) %>% dplyr::rename(virus = "infection:ch1")
 
